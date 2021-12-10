@@ -4,10 +4,10 @@ Este repositorio corresponde al frontend hecho con angular 13 para el challenge 
 
 ## Pasos para ejecutar el proyecto
 Para ejecutar este proyecto y ver su funcionalidad se debería ejecutar primero los pasos correspondientes al backend del siguiente repositorio: 
-https://github.com/tatianaserrano/challenge-mercado-libre-back
+https://github.com/jusevesi/prueba-ecobot-backend
 1. Clonar el proyecto
 ```sh
-git clone https://github.com/tatianaserrano/challenge-mercado-libre.git
+git clone https://github.com/jusevesi/prueba-ecobot-frontend
 ```
 2. Ejecutar el proyecto
 ```sh
