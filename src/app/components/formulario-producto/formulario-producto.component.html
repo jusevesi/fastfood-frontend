@@ -1,0 +1,33 @@
+<div class="container" style="width: 50%; margin: auto;">
+    <form [formGroup]="productoForm">
+        <fieldset>
+            <legend>{{productoActualizar ? 'Actualizar producto' : 'Agregar Producto' }}</legend>
+            <div class="mb-3">
+                <label for="disabledTextInput" class="form-label">Nombre</label>
+                <input formControlName="nombre" type="text" id="disabledTextInput" class="form-control" placeholder="Ej: Pizza, Gaseosa...">
+            </div>
+            <div class="mb-3">
+                <label for="disabledSelect" class="form-label">Categoría</label>
+                <select formControlName="categoria" id="disabledSelect" class="form-select">
+                    <option>Comida</option>
+                    <option>Bebida</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="disabledSelect" class="form-label">Sabor</label>
+                <select formControlName="sabor" id="disabledSelect" class="form-select">
+                    <option>Salado</option>
+                    <option>Dulce</option>
+                    <option>Acido</option>
+                    <option>Umami</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="disabledTextInput" class="form-label">Precio</label>
+                <input formControlName="precio" type="number" id="disabledTextInput" class="form-control" placeholder="1000">
+            </div>
+            <button (click)="agregarProducto()" type="submit" class="btn btn-primary" *ngIf="!productoActualizar">Agregar</button>
+            <button (click)="actualizarProducto()" type="submit" class="btn btn-primary" *ngIf="productoActualizar">Actualizar</button>
+        </fieldset>
+    </form>
+</div>

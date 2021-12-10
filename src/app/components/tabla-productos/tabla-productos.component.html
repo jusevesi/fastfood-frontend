@@ -1,0 +1,24 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Categoria</th>
+      <th scope="col">Sabor</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producto of productos">
+      <th scope="row">{{producto.nombre}}</th>
+      <td>{{producto.categoria}}</td>
+      <td>{{producto.sabor}}</td>
+      <td>{{producto.precio}}</td>
+      <td>{{producto.estado}}</td>
+      <td>
+        <button type="button" class="btn btn-primary" (click)="actualizarProducto(producto)">Editar</button>
+        <button style="margin-left: 10px" type="button" class="btn btn-danger" (click)="borrarProducto(producto.nombre)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
